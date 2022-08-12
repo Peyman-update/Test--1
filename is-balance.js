@@ -1,18 +1,36 @@
 
- let num1 = 3 , num2 = 50 , num3 = 4900733768;
+
+let text = 'String Methods and Properties Primitive values, like "John Doe", cannot have properties or methods (because they are not objects). But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.';
 
 
- let oprand = (num2 , num3)=>{
+let len = text.length < 100 ? 'The String is Short' : 'The String is Long';
 
-    do{
+console.log(len);
 
-       let thousand = num2 % 2 == 0 ? num3 += 1 : num3 += 2;
-       console.log(thousand);
-       num2++;
+/* 
 
-    }while (num2<=1000) 
-           
-     
-}
+There are 3 methods for extracting a part of a string:
 
-oprand(num2 , num3);
+slice(start, end)
+
+substring(start, end)
+
+substr(start, length)
+
+*/
+
+let parts = text.slice(-20 , -1);
+
+let parts1 = text.slice(1 , 20);
+
+let parts2 = text.slice(8);
+
+let include = parts.includes('and') ? '0' : '1';
+
+console.log(include);
+
+console.log(parts2);
+
+console.log(text.substring(13));
+
+
