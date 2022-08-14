@@ -1,8 +1,4 @@
 
-
-
-
-
 function MyFunction() {
 
     let mytext1;
@@ -10,7 +6,13 @@ function MyFunction() {
     let result1;
     result1 = document.getElementById('result');
 
-    let condition = mytext1.length < 10 ? result1.innerHTML = mytext1.length : result1.innerHTML = 'The String is Long';
+
+    if (mytext1.length < 10) {
+
+
+    } else {
+        'DDS'
+    }
 
 }
 
